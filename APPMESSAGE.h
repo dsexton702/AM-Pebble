@@ -13,11 +13,15 @@ DictionaryIterator *iter;
 static AccelData accel;
 static AppTimer *timer;
 static AppTimer *timers;
+static AppTimer *timerz;
 static TextLayer *text_layer;
 DictionaryIterator *iter;
 Tuple *text_tuple;
 char text_buffer[250];
 char *p;
+int x[1024];
+int y[1024];
+int z[1024];
 
 static void calibrate_timer(void *data);
 
